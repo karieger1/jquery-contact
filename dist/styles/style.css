@@ -9,5 +9,13 @@
     color: #36A0FF;
 }
 
+.error{
+	color: red;
+	font-size: 12px;
+	display: none;
 
+}
 
+.successpage {
+	display: none;
+}

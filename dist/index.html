@@ -13,12 +13,14 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Contact us</legend>
+                        <legend class="text-center header">Contact us (or not)</legend>
 
                         <div class="form-group">
                         <form id="form">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                             <div class="col-md-8">
+                                <div id="nameerror" class="error">You don't have a name?</div>
+                                Name:
                                 <input id="name" name="name" type="text" placeholder="General Butts" class="form-control">
                             </div>
                         </div>
@@ -26,6 +28,8 @@
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                             <div class="col-md-8">
+                            <div id="emailerror" class="error">You don't have an email address?</div>
+                            Email:
                                 <input id="email" name="email" type="text" placeholder="genbutts@gmail.com" class="form-control">
                             </div>
                         </div>
@@ -33,6 +37,8 @@
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                             <div class="col-md-8">
+                            <div id="websiteerror" class="error">You don't have a website?</div>
+                            Website:
                                 <input id="website" name="website" type="text" placeholder="http://thebutt.com" class="form-control">
                             </div>
                         </div>
@@ -40,6 +46,8 @@
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                             <div class="col-md-8">
+                            <div id="commenterror" class="error">You got nothing to say?</div>
+                            Comments:
                                 <textarea class="form-control" id="message" name="message" placeholder="Save your crying for your mother." rows="7"></textarea>
                             </div>
                         </div>
@@ -58,8 +66,9 @@
     </div>
 </div>
 
+ <div id="successpage"></div>
+
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bower_components/validator-js/validator.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
 </body>
